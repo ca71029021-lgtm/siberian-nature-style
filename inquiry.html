@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Оставить заявку — стол из слэба кедра на заказ | Siberian Nature Style</title>
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><meta name="description" content="Заявка на стол из цельного слэба алтайского кедра: подбор слэба, изготовление 7–21 день, доставка по России."><meta property="og:title" content="Оставить заявку — стол из слэба кедра на заказ | Siberian Nature Style"><meta property="og:description" content="Заявка на стол из цельного слэба алтайского кедра: подбор слэба, изготовление 7–21 день, доставка по России."><meta property="og:type" content="website"><meta property="og:image" content="assets/hero.jpg">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<header class="hdr" id="hdr">
+<div class="wrap">
+<nav class="nav">
+<a href="index.html">Главная</a>
+<a href="catalog.html">Каталог</a>
+<a href="material.html">Материал</a>
+<a href="partners.html">О сотрудничестве</a>
+<a href="contacts.html" style="color:var(--accent)">Контакты</a>
+<a href="inquiry.html">Оставить заявку</a>
+</nav>
+<button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+</div></header>
+<div class="mmenu" id="mmenu">
+<button class="close" id="mclose" aria-label="Закрыть меню">×</button>
+<a href="index.html">Главная</a><a href="catalog.html">Каталог</a>
+<a href="material.html">Материал</a>
+<a href="partners.html">О сотрудничестве</a>
+<a href="contacts.html">Контакты</a>
+<div class="mcat">
+<a href="category-journal.html">Журнальные столы</a>
+<a href="category-kitchen.html">Кухонные столы</a>
+<a href="category-exclusive.html">Эксклюзивные столы</a>
+</div>
+<a class="btn btn-secondary" style="color:#F7F4EE;border-color:rgba(247,244,238,.4)" href="inquiry.html">Оставить заявку</a>
+</div>
+<section class="sec sec-first"><div class="wrap">
+<div class="sec-head"><div><div class="kicker">Заявка</div><h1>Обсудить изделие</h1></div></div>
+<p class="lead" style="margin-bottom:40px">Напишите, какой стол вам нужен: размер, место в доме, понравившееся изделие из каталога. Подберём слэб и пришлём фотографии до начала работы.</p>
+<div class="form-card">
+<form onsubmit="return protoSubmit(event)">
+<div class="f-grid">
+<div class="f-field"><label>Имя</label><input type="text" placeholder="Как к вам обращаться"></div>
+<div class="f-field"><label>Телефон</label><input type="tel" placeholder="+7 ___ ___-__-__"></div>
+<div class="f-field"><label>E-mail</label><input type="email" placeholder="you@example.com"></div>
+<div class="f-field"><label>Интересующее изделие</label><input type="text" id="fProduct" placeholder="Например: SNS033"></div>
+<div class="f-field full"><label>Сообщение</label><textarea rows="5" placeholder="Вопрос, пожелания, размеры помещения…"></textarea></div>
+</div>
+<div style="margin-top:24px;display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+<button class="btn btn-primary" type="submit">Оставить заявку</button>
+<a style="font-size:14px;font-weight:500;color:var(--accent)" href="mailto:Siberian.slab@gmail.com">Задать вопрос по e-mail →</a>
+</div>
+<div class="proto-note">При отправке откроется WhatsApp с готовым сообщением — останется нажать «Отправить». Или напишите на e-mail: <a href="mailto:Siberian.slab@gmail.com" style="color:var(--accent)">Siberian.slab@gmail.com</a>. Изготовление — от 7 до 21 дня. Доставка по всей России.</div>
+</form>
+</div>
+</div></section>
+<script>
+const qs=new URLSearchParams(location.search);
+const q=qs.get('product');
+if(q)document.getElementById('fProduct').value=q;
+if(qs.get('topic')==='cooperation'){const ta=document.querySelector('form textarea');if(ta&&!ta.value)ta.value='Сотрудничество для профессионалов. Тип объекта, изделия, размеры: ';}
+</script>
+
+<footer class="ftr"><div class="wrap">
+<div class="cols">
+<div>
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="" loading="lazy"><span>Siberian Nature Style</span></a>
+<p style="margin-top:16px;color:rgba(247,244,238,.7);font-size:14.5px;max-width:34ch">Столы из цельных слэбов алтайского кедра. Ручная работа.<span style="display:block;margin-top:8px;font-size:12.5px;color:rgba(247,244,238,.5)">Мастерская — Республика Алтай, г. Горно-Алтайск. Доставка по всей России.</span></p>
+<a class="mail" href="mailto:Siberian.slab@gmail.com">Siberian.slab@gmail.com</a>
+</div>
+<div><h4>Каталог</h4>
+<a href="category-journal.html">Журнальные столы</a>
+<a href="category-kitchen.html">Кухонные столы</a>
+<a href="category-exclusive.html">Эксклюзивные столы</a>
+<a href="catalog.html">Все изделия</a></div>
+<div><h4>Связь</h4>
+<a href="inquiry.html">Оставить заявку</a>
+<a href="partners.html">О сотрудничестве</a>
+<a href="contacts.html">Контакты</a>
+<a href="mailto:Siberian.slab@gmail.com">Написать на e-mail</a></div>
+</div>
+<div class="bottom"><span>© 2026 Siberian Nature Style</span><span>Столы из алтайского кедра · Горно-Алтайск</span></div>
+</div></footer>
+<script src="assets/main.js"></script>
+</body></html>

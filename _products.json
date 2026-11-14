@@ -1,0 +1,332 @@
+[
+ {
+  "id": "S001",
+  "slug": "journal",
+  "cat": "Журнальные столы",
+  "dims": "700 × 500 мм · толщина столешницы 48 мм",
+  "price": "9 500 ₽",
+  "price_val": 9500,
+  "n_img": 2,
+  "photo": "assets/S001_0.jpg"
+ },
+ {
+  "id": "S002",
+  "slug": "journal",
+  "cat": "Журнальные столы",
+  "dims": "800 × 500 мм · толщина столешницы 48 мм",
+  "price": "11 000 ₽",
+  "price_val": 11000,
+  "n_img": 2,
+  "photo": "assets/S002_0.jpg"
+ },
+ {
+  "id": "S003",
+  "slug": "journal",
+  "cat": "Журнальные столы",
+  "dims": "650 × 450 мм · толщина столешницы 48 мм",
+  "price": "8 500 ₽",
+  "price_val": 8500,
+  "n_img": 2,
+  "photo": "assets/S003_0.jpg"
+ },
+ {
+  "id": "S004",
+  "slug": "journal",
+  "cat": "Журнальные столы",
+  "dims": "700 × 500 мм · толщина столешницы 48 мм",
+  "price": "9 500 ₽",
+  "price_val": 9500,
+  "n_img": 2,
+  "photo": "assets/S004_0.jpg"
+ },
+ {
+  "id": "S005",
+  "slug": "journal",
+  "cat": "Журнальные столы",
+  "dims": "700 × 500 мм · толщина столешницы 48 мм",
+  "price": "11 000 ₽",
+  "price_val": 11000,
+  "n_img": 2,
+  "photo": "assets/S005_0.jpg"
+ },
+ {
+  "id": "S006",
+  "slug": "journal",
+  "cat": "Журнальные столы",
+  "dims": "650 × 500 мм · толщина столешницы 48 мм",
+  "price": "9 000 ₽",
+  "price_val": 9000,
+  "n_img": 2,
+  "photo": "assets/S006_0.jpg"
+ },
+ {
+  "id": "S007",
+  "slug": "journal",
+  "cat": "Журнальные столы",
+  "dims": "800 × 500 мм · толщина столешницы 48 мм",
+  "price": "15 000 ₽",
+  "price_val": 15000,
+  "n_img": 2,
+  "photo": "assets/S007_0.jpg"
+ },
+ {
+  "id": "SN008",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "2000 × 750 мм · толщина столешницы 68 мм",
+  "price": "70 000 ₽",
+  "price_val": 70000,
+  "n_img": 4,
+  "photo": "assets/SN008_0.jpg"
+ },
+ {
+  "id": "SN009",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "2000 × 750 мм · толщина столешницы 68 мм",
+  "price": "70 000 ₽",
+  "price_val": 70000,
+  "n_img": 2,
+  "photo": "assets/SN009_0.jpg"
+ },
+ {
+  "id": "SN010",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "2000 × 750 мм · толщина столешницы 68 мм",
+  "price": "70 000 ₽",
+  "price_val": 70000,
+  "n_img": 1,
+  "photo": "assets/SN010_0.jpg"
+ },
+ {
+  "id": "SN011",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "2000 × 750-740 мм · толщина столешницы 68 мм",
+  "price": "50 000 ₽",
+  "price_val": 50000,
+  "n_img": 3,
+  "photo": "assets/SN011_0.jpg"
+ },
+ {
+  "id": "SN012",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "3000 × 920 мм · толщина столешницы 70 мм",
+  "price": "120 000 ₽",
+  "price_val": 120000,
+  "n_img": 2,
+  "photo": "assets/SN012_0.jpg"
+ },
+ {
+  "id": "SN013",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1400 × 700-680 мм · толщина столешницы 50 мм",
+  "price": "50 000 ₽",
+  "price_val": 50000,
+  "n_img": 2,
+  "photo": "assets/SN013_0.jpg"
+ },
+ {
+  "id": "SN014",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1400 × 700 мм · толщина столешницы 50 мм",
+  "price": "50 000 ₽",
+  "price_val": 50000,
+  "n_img": 2,
+  "photo": "assets/SN014_0.jpg"
+ },
+ {
+  "id": "SN015",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1400 × 700-740 мм · толщина столешницы 50 мм",
+  "price": "50 000 ₽",
+  "price_val": 50000,
+  "n_img": 2,
+  "photo": "assets/SN015_0.jpg"
+ },
+ {
+  "id": "SN016",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1410 × 680-580 мм · толщина столешницы 50 мм",
+  "price": "50 000 ₽",
+  "price_val": 50000,
+  "n_img": 2,
+  "photo": "assets/SN016_0.jpg"
+ },
+ {
+  "id": "SN017",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "2000 × 750 мм · толщина столешницы 68 мм",
+  "price": "60 000 ₽",
+  "price_val": 60000,
+  "n_img": 2,
+  "photo": "assets/SN017_0.jpg"
+ },
+ {
+  "id": "SN018",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1700 × 790 мм · толщина столешницы 79 мм",
+  "price": "50 000 ₽",
+  "price_val": 50000,
+  "n_img": 2,
+  "photo": "assets/SN018_0.jpg"
+ },
+ {
+  "id": "SN019",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1500 × (740-780) мм · толщина столешницы 78 мм",
+  "price": "40 000 ₽",
+  "price_val": 40000,
+  "n_img": 2,
+  "photo": "assets/SN019_0.jpg"
+ },
+ {
+  "id": "SN020",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1240 × (740-750) мм · толщина столешницы 70 мм",
+  "price": "40 000 ₽",
+  "price_val": 40000,
+  "n_img": 2,
+  "photo": "assets/SN020_0.jpg"
+ },
+ {
+  "id": "SN021",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1600 × (820-880) мм · толщина столешницы 82 мм",
+  "price": "40 000 ₽",
+  "price_val": 40000,
+  "n_img": 2,
+  "photo": "assets/SN021_0.jpg"
+ },
+ {
+  "id": "SN022",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1440 × 700 мм · толщина столешницы 70 мм",
+  "price": "37 000 ₽",
+  "price_val": 37000,
+  "n_img": 2,
+  "photo": "assets/SN022_0.jpg"
+ },
+ {
+  "id": "SN023",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1450 × 780 мм · толщина столешницы 50 мм",
+  "price": "35 000 ₽",
+  "price_val": 35000,
+  "n_img": 2,
+  "photo": "assets/SN023_0.jpg"
+ },
+ {
+  "id": "SN024",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1400 × 800 мм · толщина столешницы 50 мм",
+  "price": "35 000 ₽",
+  "price_val": 35000,
+  "n_img": 2,
+  "photo": "assets/SN024_0.jpg"
+ },
+ {
+  "id": "SN025",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "1020 × 760 мм · толщина столешницы 75 мм",
+  "price": "28 000 ₽",
+  "price_val": 28000,
+  "n_img": 2,
+  "photo": "assets/SN025_0.jpg"
+ },
+ {
+  "id": "SN026",
+  "slug": "kitchen",
+  "cat": "Кухонные столы",
+  "dims": "2200 × 870 мм · толщина столешницы 40 мм",
+  "price": "50 000 ₽",
+  "price_val": 50000,
+  "n_img": 2,
+  "photo": "assets/SN026_0.jpg"
+ },
+ {
+  "id": "SNS027",
+  "slug": "exclusive",
+  "cat": "Эксклюзивные столы",
+  "dims": "3000 × 900 мм · толщина столешницы 80 мм",
+  "price": "110 000 ₽",
+  "price_val": 110000,
+  "n_img": 2,
+  "photo": "assets/SNS027_0.jpg"
+ },
+ {
+  "id": "SNS028",
+  "slug": "exclusive",
+  "cat": "Эксклюзивные столы",
+  "dims": "1980 × 1050 мм · толщина столешницы 72 мм",
+  "price": "180 000 ₽",
+  "price_val": 180000,
+  "n_img": 5,
+  "photo": "assets/SNS028_0.jpg"
+ },
+ {
+  "id": "SNS029",
+  "slug": "exclusive",
+  "cat": "Эксклюзивные столы",
+  "dims": "1980 × 940 мм · толщина столешницы 70 мм",
+  "price": "160 000 ₽",
+  "price_val": 160000,
+  "n_img": 2,
+  "photo": "assets/SNS029_0.jpg"
+ },
+ {
+  "id": "SNS030",
+  "slug": "exclusive",
+  "cat": "Эксклюзивные столы",
+  "dims": "2020 × (850-940) мм · толщина столешницы 76 мм",
+  "price": "140 000 ₽",
+  "price_val": 140000,
+  "n_img": 2,
+  "photo": "assets/SNS030_0.jpg"
+ },
+ {
+  "id": "SNS031",
+  "slug": "exclusive",
+  "cat": "Эксклюзивные столы",
+  "dims": "1450 × (820-1000) мм · толщина столешницы 40 мм",
+  "price": "70 000 ₽",
+  "price_val": 70000,
+  "n_img": 2,
+  "photo": "assets/SNS031_0.jpg"
+ },
+ {
+  "id": "SNS032",
+  "slug": "exclusive",
+  "cat": "Эксклюзивные столы",
+  "dims": "1440 × (830-880) мм · толщина столешницы 40 мм",
+  "price": "65 000 ₽",
+  "price_val": 65000,
+  "n_img": 2,
+  "photo": "assets/SNS032_0.jpg"
+ },
+ {
+  "id": "SNS033",
+  "slug": "exclusive",
+  "cat": "Эксклюзивные столы",
+  "dims": "3000 × (860-930) мм · толщина столешницы 75 мм",
+  "price": "190 000 ₽",
+  "price_val": 190000,
+  "n_img": 6,
+  "photo": "assets/SNS033_0.jpg"
+ }
+]

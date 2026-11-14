@@ -1,0 +1,9 @@
+{
+  "name": "sns-proto7",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Siberian Nature Style — PHASE 7 clickable prototype (initial version, not for production)",
+  "scripts": {
+    "dev": "node dev-server.js"
+  }
+}
