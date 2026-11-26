@@ -10,8 +10,9 @@
 <link rel="stylesheet" href="assets/style.css">
 </head><body>
 <header class="hdr" id="hdr">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
 <div class="wrap">
-<nav class="nav">
+<nav class="nav" aria-label="Основная навигация">
 <a href="index.html">Главная</a>
 <a href="catalog.html" style="color:var(--accent-text)">Каталог</a>
 <a href="material.html">Материал</a>
@@ -21,7 +22,7 @@
 </nav>
 <button class="burger" id="burger" aria-label="Меню" aria-controls="mmenu" aria-expanded="false"><span></span><span></span><span></span></button>
 </div></header>
-<div class="mmenu" id="mmenu" aria-hidden="true" inert>
+<nav class="mmenu" id="mmenu" aria-label="Мобильное меню" aria-hidden="true" inert>
 <button class="close" id="mclose" aria-label="Закрыть меню">×</button>
 <a href="index.html">Главная</a><a href="catalog.html">Каталог</a>
 <a href="material.html">Материал</a>
@@ -33,7 +34,8 @@
 <a href="category-exclusive.html">Эксклюзивные столы</a>
 </div>
 <a class="btn btn-secondary" style="color:#F7F4EE;border-color:rgba(247,244,238,.4)" href="inquiry.html">Оставить заявку</a>
-</div>
+</nav>
+<main id="main" tabindex="-1">
 <section class="sec sec-first"><div class="wrap">
 <div class="sec-head"><div><div class="kicker">Коллекция · 7 изделий</div><h1>Журнальные столы из слэбов кедра</h1></div>
 <a class="link" href="catalog.html">← Весь каталог</a></div>
@@ -42,49 +44,49 @@
 <div class="grid4"><a class="card" href="product-S001.html">
 <div class="ph"><img src="assets/S001_0.jpg" alt="Стол S001" loading="lazy"></div>
 <div class="info">
-<h3>S001</h3>
+<h2>S001</h2>
 <div class="dims">700 × 500 мм</div>
 <div class="dims">толщина столешницы 48 мм</div>
 <div class="row"><span class="price">9 500 ₽</span><span class="cta">Смотреть изделие →</span></div>
 </div></a><a class="card" href="product-S002.html">
 <div class="ph"><img src="assets/S002_0.jpg" alt="Стол S002" loading="lazy"></div>
 <div class="info">
-<h3>S002</h3>
+<h2>S002</h2>
 <div class="dims">800 × 500 мм</div>
 <div class="dims">толщина столешницы 48 мм</div>
 <div class="row"><span class="price">11 000 ₽</span><span class="cta">Смотреть изделие →</span></div>
 </div></a><a class="card" href="product-S003.html">
 <div class="ph"><img src="assets/S003_0.jpg" alt="Стол S003" loading="lazy"></div>
 <div class="info">
-<h3>S003</h3>
+<h2>S003</h2>
 <div class="dims">650 × 450 мм</div>
 <div class="dims">толщина столешницы 48 мм</div>
 <div class="row"><span class="price">8 500 ₽</span><span class="cta">Смотреть изделие →</span></div>
 </div></a><a class="card" href="product-S004.html">
 <div class="ph"><img src="assets/S004_0.jpg" alt="Стол S004" loading="lazy"></div>
 <div class="info">
-<h3>S004</h3>
+<h2>S004</h2>
 <div class="dims">700 × 500 мм</div>
 <div class="dims">толщина столешницы 48 мм</div>
 <div class="row"><span class="price">9 500 ₽</span><span class="cta">Смотреть изделие →</span></div>
 </div></a><a class="card" href="product-S005.html">
 <div class="ph"><img src="assets/S005_0.jpg" alt="Стол S005" loading="lazy"></div>
 <div class="info">
-<h3>S005</h3>
+<h2>S005</h2>
 <div class="dims">700 × 500 мм</div>
 <div class="dims">толщина столешницы 48 мм</div>
 <div class="row"><span class="price">11 000 ₽</span><span class="cta">Смотреть изделие →</span></div>
 </div></a><a class="card" href="product-S006.html">
 <div class="ph"><img src="assets/S006_0.jpg" alt="Стол S006" loading="lazy"></div>
 <div class="info">
-<h3>S006</h3>
+<h2>S006</h2>
 <div class="dims">650 × 500 мм</div>
 <div class="dims">толщина столешницы 48 мм</div>
 <div class="row"><span class="price">9 000 ₽</span><span class="cta">Смотреть изделие →</span></div>
 </div></a><a class="card" href="product-S007.html">
 <div class="ph"><img src="assets/S007_0.jpg" alt="Стол S007" loading="lazy"></div>
 <div class="info">
-<h3>S007</h3>
+<h2>S007</h2>
 <div class="dims">800 × 500 мм</div>
 <div class="dims">толщина столешницы 48 мм</div>
 <div class="row"><span class="price">15 000 ₽</span><span class="cta">Смотреть изделие →</span></div>
@@ -94,6 +96,8 @@
 <div style="margin-top:20px"><a class="btn btn-primary" href="inquiry.html">Обсудить изделие →</a></div>
 </div>
 </div></section>
+</main>
+
 <footer class="ftr"><div class="wrap">
 <div class="cols">
 <div>
@@ -101,12 +105,12 @@
 <p style="margin-top:16px;color:rgba(247,244,238,.7);font-size:14.5px;max-width:34ch">Столы из цельных слэбов алтайского кедра. Ручная работа.<span style="display:block;margin-top:8px;font-size:12.5px;color:rgba(247,244,238,.58)">Мастерская — Республика Алтай, г. Горно-Алтайск. Доставка по всей России.</span></p>
 <a class="mail" href="mailto:Siberian.slab@gmail.com">Siberian.slab@gmail.com</a>
 </div>
-<div><h4>Каталог</h4>
+<div><h2 class="ftr-title">Каталог</h2>
 <a href="category-journal.html">Журнальные столы</a>
 <a href="category-kitchen.html">Кухонные столы</a>
 <a href="category-exclusive.html">Эксклюзивные столы</a>
 <a href="catalog.html">Все изделия</a></div>
-<div><h4>Связь</h4>
+<div><h2 class="ftr-title">Связь</h2>
 <a href="inquiry.html">Оставить заявку</a>
 <a href="partners.html">О сотрудничестве</a>
 <a href="contacts.html">Контакты</a>

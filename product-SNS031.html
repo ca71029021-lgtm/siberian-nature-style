@@ -10,8 +10,9 @@
 <link rel="stylesheet" href="assets/style.css">
 </head><body class="pdp">
 <header class="hdr" id="hdr">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
 <div class="wrap">
-<nav class="nav">
+<nav class="nav" aria-label="Основная навигация">
 <a href="index.html">Главная</a>
 <a href="catalog.html" style="color:var(--accent-text)">Каталог</a>
 <a href="material.html">Материал</a>
@@ -21,7 +22,7 @@
 </nav>
 <button class="burger" id="burger" aria-label="Меню" aria-controls="mmenu" aria-expanded="false"><span></span><span></span><span></span></button>
 </div></header>
-<div class="mmenu" id="mmenu" aria-hidden="true" inert>
+<nav class="mmenu" id="mmenu" aria-label="Мобильное меню" aria-hidden="true" inert>
 <button class="close" id="mclose" aria-label="Закрыть меню">×</button>
 <a href="index.html">Главная</a><a href="catalog.html">Каталог</a>
 <a href="material.html">Материал</a>
@@ -33,9 +34,10 @@
 <a href="category-exclusive.html">Эксклюзивные столы</a>
 </div>
 <a class="btn btn-secondary" style="color:#F7F4EE;border-color:rgba(247,244,238,.4)" href="inquiry.html">Оставить заявку</a>
-</div>
+</nav>
+<main id="main" tabindex="-1">
 <div class="wrap">
-<nav class="crumbs"><a href="index.html">Главная</a> · <a href="catalog.html">Каталог</a> · <a href="category-exclusive.html">Эксклюзивные столы</a> · SNS031</nav>
+<nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a> · <a href="catalog.html">Каталог</a> · <a href="category-exclusive.html">Эксклюзивные столы</a> · SNS031</nav>
 <div class="pdp">
 <div class="gallery"><div class="main"><img id="mainImg" src="assets/SNS031_0.jpg" alt="Стол SNS031"></div><div class="thumbs"><button type="button" class="on" onclick="setImg(this)" aria-label="Показать фото 1 из 5 — стол SNS031" aria-pressed="true"><img src="assets/SNS031_0.jpg" alt="" data-alt="Стол SNS031 — фото 1"></button><button type="button" class="" onclick="setImg(this)" aria-label="Показать фото 2 из 5 — стол SNS031" aria-pressed="false"><img src="assets/SNS031_1.jpg" alt="" data-alt="Стол SNS031 — фото 2"></button><button type="button" class="" onclick="setImg(this)" aria-label="Показать фото 3 из 5 — стол SNS031" aria-pressed="false"><img src="assets/SNS031_2.jpg" alt="" data-alt="Стол SNS031 — фото 3" loading="lazy"></button><button type="button" class="" onclick="setImg(this)" aria-label="Показать фото 4 из 5 — стол SNS031" aria-pressed="false"><img src="assets/SNS031_3.jpg" alt="" data-alt="Стол SNS031 — фото 4" loading="lazy"></button><button type="button" class="" onclick="setImg(this)" aria-label="Показать фото 5 из 5 — стол SNS031" aria-pressed="false"><img src="assets/SNS031_4.jpg" alt="" data-alt="Стол SNS031 — фото 5" loading="lazy"></button></div></div>
 <div>
@@ -102,6 +104,8 @@ document.querySelectorAll('.thumbs button').forEach(b=>{b.classList.remove('on')
 
 <div class="mcta"><a class="btn btn-primary" href="inquiry.html?product=SNS031">Оставить заявку на это изделие</a></div>
 
+</main>
+
 <footer class="ftr"><div class="wrap">
 <div class="cols">
 <div>
@@ -109,12 +113,12 @@ document.querySelectorAll('.thumbs button').forEach(b=>{b.classList.remove('on')
 <p style="margin-top:16px;color:rgba(247,244,238,.7);font-size:14.5px;max-width:34ch">Столы из цельных слэбов алтайского кедра. Ручная работа.<span style="display:block;margin-top:8px;font-size:12.5px;color:rgba(247,244,238,.58)">Мастерская — Республика Алтай, г. Горно-Алтайск. Доставка по всей России.</span></p>
 <a class="mail" href="mailto:Siberian.slab@gmail.com">Siberian.slab@gmail.com</a>
 </div>
-<div><h4>Каталог</h4>
+<div><h2 class="ftr-title">Каталог</h2>
 <a href="category-journal.html">Журнальные столы</a>
 <a href="category-kitchen.html">Кухонные столы</a>
 <a href="category-exclusive.html">Эксклюзивные столы</a>
 <a href="catalog.html">Все изделия</a></div>
-<div><h4>Связь</h4>
+<div><h2 class="ftr-title">Связь</h2>
 <a href="inquiry.html">Оставить заявку</a>
 <a href="partners.html">О сотрудничестве</a>
 <a href="contacts.html">Контакты</a>
