@@ -81,19 +81,44 @@
   window.protoSubmit = function (e) {
     e.preventDefault();
     var f = e.target;
-    function val(sel) { var el = f.querySelector(sel); return el ? el.value.trim() : ''; }
+    var nameEl = f.querySelector('#fName');
+    var telEl = f.querySelector('#fPhone');
+    var mailEl = f.querySelector('#fEmail');
+    var prodEl = f.querySelector('#fProduct');
+    var msgEl = f.querySelector('#fMessage');
+    var status = f.querySelector('#formStatus');
+    var fields = [nameEl, telEl, mailEl, prodEl, msgEl];
+    fields.forEach(function (el) { if (el) el.removeAttribute('aria-invalid'); });
+    function val(el) { return el ? el.value.trim() : ''; }
+    var name = val(nameEl);
+    var tel = val(telEl);
+    var mail = val(mailEl);
+    var prod = val(prodEl);
+    var msg = val(msgEl);
+    var errors = [];
+    if (!name) errors.push({ el: nameEl, text: 'Укажите имя.' });
+    if (!tel) errors.push({ el: telEl, text: 'Укажите телефон.' });
+    if (mail && mailEl && !mailEl.validity.valid) errors.push({ el: mailEl, text: 'Введите корректный e-mail.' });
+    if (errors.length) {
+      errors.forEach(function (error) { if (error.el) error.el.setAttribute('aria-invalid', 'true'); });
+      if (status) {
+        status.textContent = errors.map(function (error) { return error.text; }).join(' ');
+        status.setAttribute('data-state', 'error');
+      }
+      if (errors[0].el) errors[0].el.focus();
+      return false;
+    }
     var lines = ['Здравствуйте! Заявка с сайта Siberian Nature Style.'];
-    var name = val('input[placeholder="Как к вам обращаться"]');
-    var tel = val('input[type="tel"]');
-    var mail = val('input[type="email"]');
-    var prod = val('#fProduct');
-    var msg = val('textarea');
     if (name) lines.push('Имя: ' + name);
     if (tel) lines.push('Телефон: ' + tel);
     if (mail) lines.push('E-mail: ' + mail);
     if (prod) lines.push('Изделие: ' + prod);
     if (msg) lines.push('Сообщение: ' + msg);
     var url = 'https://wa.me/79236650092?text=' + encodeURIComponent(lines.join('\n'));
+    if (status) {
+      status.textContent = 'Открываем WhatsApp с готовым сообщением…';
+      status.setAttribute('data-state', 'success');
+    }
     window.open(url, '_blank', 'noopener');
     return false;
   };

@@ -40,18 +40,20 @@
 <div class="sec-head"><div><div class="kicker">Заявка</div><h1>Обсудить изделие</h1></div></div>
 <p class="lead" style="margin-bottom:40px">Напишите, какой стол вам нужен: размер, место в доме, понравившееся изделие из каталога. Подберём слэб и пришлём фотографии до начала работы.</p>
 <div class="form-card">
-<form onsubmit="return protoSubmit(event)">
+<form onsubmit="return protoSubmit(event)" novalidate>
+<p class="form-required">* — обязательные поля.</p>
 <div class="f-grid">
-<div class="f-field"><label for="fName">Имя</label><input type="text" id="fName" placeholder="Как к вам обращаться"></div>
-<div class="f-field"><label for="fPhone">Телефон</label><input type="tel" id="fPhone" placeholder="+7 ___ ___-__-__"></div>
-<div class="f-field"><label for="fEmail">E-mail</label><input type="email" id="fEmail" placeholder="you@example.com"></div>
-<div class="f-field"><label for="fProduct">Интересующее изделие</label><input type="text" id="fProduct" placeholder="Например: SNS033"></div>
-<div class="f-field full"><label for="fMessage">Сообщение</label><textarea id="fMessage" rows="5" placeholder="Вопрос, пожелания, размеры помещения…"></textarea></div>
+<div class="f-field"><label for="fName">Имя *</label><input type="text" id="fName" name="name" autocomplete="name" required placeholder="Как к вам обращаться"></div>
+<div class="f-field"><label for="fPhone">Телефон *</label><input type="tel" id="fPhone" name="tel" autocomplete="tel" required placeholder="+7 ___ ___-__-__"></div>
+<div class="f-field"><label for="fEmail">E-mail</label><input type="email" id="fEmail" name="email" autocomplete="email" placeholder="you@example.com"></div>
+<div class="f-field"><label for="fProduct">Интересующее изделие</label><input type="text" id="fProduct" name="product" autocomplete="off" placeholder="Например: SNS033"></div>
+<div class="f-field full"><label for="fMessage">Сообщение</label><textarea id="fMessage" name="message" autocomplete="off" rows="5" placeholder="Вопрос, пожелания, размеры помещения…"></textarea></div>
 </div>
 <div style="margin-top:24px;display:flex;gap:20px;align-items:center;flex-wrap:wrap">
 <button class="btn btn-primary" type="submit">Оставить заявку</button>
 <a style="font-size:14px;font-weight:500;color:var(--accent-text)" href="mailto:Siberian.slab@gmail.com">Задать вопрос по e-mail →</a>
 </div>
+<div id="formStatus" class="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
 <div class="proto-note">При отправке откроется WhatsApp с готовым сообщением — останется нажать «Отправить». Или напишите на e-mail: <a href="mailto:Siberian.slab@gmail.com" style="color:var(--accent-text)">Siberian.slab@gmail.com</a>. Изготовление — от 7 до 21 дня. Доставка по всей России.</div>
 </form>
 </div>
