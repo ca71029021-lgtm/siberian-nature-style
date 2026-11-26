@@ -19,9 +19,9 @@
 <a href="contacts.html">Контакты</a>
 <a href="inquiry.html">Оставить заявку</a>
 </nav>
-<button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+<button class="burger" id="burger" aria-label="Меню" aria-controls="mmenu" aria-expanded="false"><span></span><span></span><span></span></button>
 </div></header>
-<div class="mmenu" id="mmenu">
+<div class="mmenu" id="mmenu" aria-hidden="true" inert>
 <button class="close" id="mclose" aria-label="Закрыть меню">×</button>
 <a href="index.html">Главная</a><a href="catalog.html">Каталог</a>
 <a href="material.html">Материал</a>
@@ -37,7 +37,7 @@
 <div class="wrap">
 <nav class="crumbs"><a href="index.html">Главная</a> · <a href="catalog.html">Каталог</a> · <a href="category-journal.html">Журнальные столы</a> · S002</nav>
 <div class="pdp">
-<div class="gallery"><div class="main"><img id="mainImg" src="assets/S002_0.jpg" alt="Стол S002"></div><div class="thumbs"><button class="on" onclick="setImg(this)"><img src="assets/S002_0.jpg" alt=""></button><button class="" onclick="setImg(this)"><img src="assets/S002_1.jpg" alt=""></button><button class="" onclick="setImg(this)"><img src="assets/S002_2.jpg" alt="" loading="lazy"></button><button class="" onclick="setImg(this)"><img src="assets/S002_3.jpg" alt="" loading="lazy"></button><button class="" onclick="setImg(this)"><img src="assets/S002_4.jpg" alt="" loading="lazy"></button></div></div>
+<div class="gallery"><div class="main"><img id="mainImg" src="assets/S002_0.jpg" alt="Стол S002"></div><div class="thumbs"><button type="button" class="on" onclick="setImg(this)" aria-label="Показать фото 1 из 5 — стол S002" aria-pressed="true"><img src="assets/S002_0.jpg" alt="" data-alt="Стол S002 — фото 1"></button><button type="button" class="" onclick="setImg(this)" aria-label="Показать фото 2 из 5 — стол S002" aria-pressed="false"><img src="assets/S002_1.jpg" alt="" data-alt="Стол S002 — фото 2"></button><button type="button" class="" onclick="setImg(this)" aria-label="Показать фото 3 из 5 — стол S002" aria-pressed="false"><img src="assets/S002_2.jpg" alt="" data-alt="Стол S002 — фото 3" loading="lazy"></button><button type="button" class="" onclick="setImg(this)" aria-label="Показать фото 4 из 5 — стол S002" aria-pressed="false"><img src="assets/S002_3.jpg" alt="" data-alt="Стол S002 — фото 4" loading="lazy"></button><button type="button" class="" onclick="setImg(this)" aria-label="Показать фото 5 из 5 — стол S002" aria-pressed="false"><img src="assets/S002_4.jpg" alt="" data-alt="Стол S002 — фото 5" loading="lazy"></button></div></div>
 <div>
 <h1>Журнальный стол из алтайского кедра S002, 800 × 500 мм</h1>
 <div class="id">S002 · единственный экземпляр</div>
@@ -96,8 +96,8 @@
 </div></a></div>
 </div>
 <script>
-function setImg(btn){document.getElementById('mainImg').src=btn.querySelector('img').src;
-document.querySelectorAll('.thumbs button').forEach(b=>b.classList.remove('on'));btn.classList.add('on');}
+function setImg(btn){var main=document.getElementById('mainImg');var img=btn.querySelector('img');main.src=img.src;main.alt=img.getAttribute('data-alt')||main.alt;
+document.querySelectorAll('.thumbs button').forEach(b=>{b.classList.remove('on');b.setAttribute('aria-pressed','false');});btn.classList.add('on');btn.setAttribute('aria-pressed','true');}
 </script>
 
 <div class="mcta"><a class="btn btn-primary" href="inquiry.html?product=S002">Оставить заявку на это изделие</a></div>
@@ -106,7 +106,7 @@ document.querySelectorAll('.thumbs button').forEach(b=>b.classList.remove('on'))
 <div class="cols">
 <div>
 <a class="brand" href="index.html"><img src="assets/logo.png" alt="" loading="lazy"><span>Siberian Nature Style</span></a>
-<p style="margin-top:16px;color:rgba(247,244,238,.7);font-size:14.5px;max-width:34ch">Столы из цельных слэбов алтайского кедра. Ручная работа.<span style="display:block;margin-top:8px;font-size:12.5px;color:rgba(247,244,238,.5)">Мастерская — Республика Алтай, г. Горно-Алтайск. Доставка по всей России.</span></p>
+<p style="margin-top:16px;color:rgba(247,244,238,.7);font-size:14.5px;max-width:34ch">Столы из цельных слэбов алтайского кедра. Ручная работа.<span style="display:block;margin-top:8px;font-size:12.5px;color:rgba(247,244,238,.58)">Мастерская — Республика Алтай, г. Горно-Алтайск. Доставка по всей России.</span></p>
 <a class="mail" href="mailto:Siberian.slab@gmail.com">Siberian.slab@gmail.com</a>
 </div>
 <div><h4>Каталог</h4>

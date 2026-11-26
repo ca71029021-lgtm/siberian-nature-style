@@ -13,13 +13,55 @@
   var mmenu = document.getElementById('mmenu');
   var mclose = document.getElementById('mclose');
   if (burger && mmenu) {
-    burger.addEventListener('click', function () { mmenu.classList.add('open'); });
-    if (mclose) mclose.addEventListener('click', function () { mmenu.classList.remove('open'); });
+    function menuItems() {
+      return Array.from(mmenu.querySelectorAll('button:not([disabled]), a[href]'));
+    }
+    function openMenu() {
+      mmenu.inert = false;
+      mmenu.setAttribute('aria-hidden', 'false');
+      burger.setAttribute('aria-expanded', 'true');
+      mmenu.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      (mclose || menuItems()[0]).focus();
+    }
+    function closeMenu(restoreFocus) {
+      mmenu.classList.remove('open');
+      mmenu.setAttribute('aria-hidden', 'true');
+      mmenu.inert = true;
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+      if (restoreFocus) burger.focus();
+    }
+    closeMenu(false);
+    burger.addEventListener('click', function () {
+      if (mmenu.classList.contains('open')) closeMenu(true);
+      else openMenu();
+    });
+    if (mclose) mclose.addEventListener('click', function () { closeMenu(true); });
     mmenu.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { mmenu.classList.remove('open'); });
+      a.addEventListener('click', function () { closeMenu(false); });
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') mmenu.classList.remove('open');
+      if (!mmenu.classList.contains('open')) return;
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        closeMenu(true);
+      }
+      if (e.key === 'Tab') {
+        var items = menuItems();
+        var first = items[0];
+        var last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        } else if (!mmenu.contains(document.activeElement)) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
     });
   }
 
