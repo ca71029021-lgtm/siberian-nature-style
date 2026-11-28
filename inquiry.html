@@ -49,6 +49,7 @@
 <div class="f-field"><label for="fProduct">Интересующее изделие</label><input type="text" id="fProduct" name="product" autocomplete="off" placeholder="Например: SNS033"></div>
 <div class="f-field full"><label for="fMessage">Сообщение</label><textarea id="fMessage" name="message" autocomplete="off" rows="5" placeholder="Вопрос, пожелания, размеры помещения…"></textarea></div>
 </div>
+<div class="consent-field"><input type="checkbox" id="fConsent" name="consent" autocomplete="off" required><label for="fConsent">Я принимаю <a href="privacy.html">политику конфиденциальности</a> и даю <a href="consent.html">согласие на обработку персональных данных</a>.</label></div>
 <div style="margin-top:24px;display:flex;gap:20px;align-items:center;flex-wrap:wrap">
 <button class="btn btn-primary" type="submit">Оставить заявку</button>
 <a style="font-size:14px;font-weight:500;color:var(--accent-text)" href="mailto:Siberian.slab@gmail.com">Задать вопрос по e-mail →</a>
@@ -70,7 +71,7 @@ if(qs.get('topic')==='cooperation'){const ta=document.querySelector('form textar
 <footer class="ftr"><div class="wrap">
 <div class="cols">
 <div>
-<a class="brand" href="index.html"><img src="assets/logo.png" alt="" loading="lazy"><span>Siberian Nature Style</span></a>
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="" loading="lazy" width="160" height="160"><span>Siberian Nature Style</span></a>
 <p style="margin-top:16px;color:rgba(247,244,238,.7);font-size:14.5px;max-width:34ch">Столы из цельных слэбов алтайского кедра. Ручная работа.<span style="display:block;margin-top:8px;font-size:12.5px;color:rgba(247,244,238,.58)">Мастерская — Республика Алтай, г. Горно-Алтайск. Доставка по всей России.</span></p>
 <a class="mail" href="mailto:Siberian.slab@gmail.com">Siberian.slab@gmail.com</a>
 </div>
@@ -85,7 +86,8 @@ if(qs.get('topic')==='cooperation'){const ta=document.querySelector('form textar
 <a href="contacts.html">Контакты</a>
 <a href="mailto:Siberian.slab@gmail.com">Написать на e-mail</a></div>
 </div>
-<div class="bottom"><span>© 2026 Siberian Nature Style</span><span>Столы из алтайского кедра · Горно-Алтайск</span></div>
+<div class="social-block"><div class="ftr-title">Мы на связи</div><div class="social-links"><a class="social-link" href="https://wa.me/79236650092" target="_blank" rel="noopener noreferrer" aria-label="Siberian Nature Style в WhatsApp"><img src="assets/social/whatsapp.svg" alt="" width="30" height="30" loading="lazy"></a></div></div>
+<div class="bottom"><div class="legal-links"><a href="privacy.html">Политика конфиденциальности</a><a href="consent.html">Согласие на обработку данных</a></div><span>© 2026 Siberian Nature Style</span><span>Столы из алтайского кедра · Горно-Алтайск</span></div>
 </div></footer>
 <script src="assets/main.js"></script>
 </body></html>

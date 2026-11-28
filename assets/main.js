@@ -86,8 +86,9 @@
     var mailEl = f.querySelector('#fEmail');
     var prodEl = f.querySelector('#fProduct');
     var msgEl = f.querySelector('#fMessage');
+    var consentEl = f.querySelector('#fConsent');
     var status = f.querySelector('#formStatus');
-    var fields = [nameEl, telEl, mailEl, prodEl, msgEl];
+    var fields = [nameEl, telEl, mailEl, prodEl, msgEl, consentEl];
     fields.forEach(function (el) { if (el) el.removeAttribute('aria-invalid'); });
     function val(el) { return el ? el.value.trim() : ''; }
     var name = val(nameEl);
@@ -98,6 +99,7 @@
     var errors = [];
     if (!name) errors.push({ el: nameEl, text: 'Укажите имя.' });
     if (!tel) errors.push({ el: telEl, text: 'Укажите телефон.' });
+    if (!consentEl || !consentEl.checked) errors.push({ el: consentEl, text: 'Подтвердите согласие на обработку персональных данных.' });
     if (mail && mailEl && !mailEl.validity.valid) errors.push({ el: mailEl, text: 'Введите корректный e-mail.' });
     if (errors.length) {
       errors.forEach(function (error) { if (error.el) error.el.setAttribute('aria-invalid', 'true'); });

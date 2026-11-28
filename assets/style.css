@@ -325,3 +325,36 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
   .material-page .atmo h2,
   .material-page .sec-tight h2{line-height:1.12}
 }
+
+.consent-field{display:flex;align-items:flex-start;gap:12px;margin-top:22px;font-size:14px;line-height:1.55;color:var(--muted)}
+.consent-field input{width:20px;height:20px;margin:1px 0 0;flex:0 0 20px;accent-color:var(--primary)}
+.consent-field a{color:var(--accent-text);text-decoration:underline;text-underline-offset:2px}
+.consent-field input[aria-invalid="true"]{outline:2px solid #913B32;outline-offset:2px}
+.ftr .bottom a{display:inline;padding:0;color:inherit;font-size:inherit}
+/* SOCIAL AND LEGAL 2026-11-26 */
+.social-block{margin-top:26px}
+.social-block .ftr-title{margin-bottom:12px}
+.ftr .social-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.ftr a.social-link{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:7px;border:1px solid rgba(247,244,238,.28);border-radius:50%;transition:background .2s,border-color .2s,transform .2s}
+.ftr a.social-link:hover,.ftr a.social-link:focus-visible{background:rgba(247,244,238,.08);border-color:var(--accent-tint);transform:translateY(-2px)}
+.ftr .social-link img{width:30px;height:30px}
+.ftr .bottom{align-items:flex-start}
+.ftr .bottom .legal-links{display:flex;flex-wrap:wrap;gap:8px 24px}
+.ftr .bottom .legal-links a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(247,244,238,.3)}
+.legal-doc{max-width:900px;margin-top:48px}
+.legal-section{padding:28px 0;border-top:1px solid var(--border)}
+.legal-section h2{font-size:28px;margin-bottom:14px;line-height:1.2}
+.legal-section p,.legal-list{font-size:16px;line-height:1.7;color:var(--muted)}
+.legal-section a{color:var(--accent-text);text-decoration:underline;text-underline-offset:3px}
+.legal-list{margin-top:12px;padding-left:24px}
+.legal-list li+li{margin-top:6px}
+@media(max-width:767px){.legal-doc{margin-top:32px}.legal-section{padding:24px 0}.legal-section h2{font-size:25px}.ftr .bottom{flex-direction:column}.ftr .bottom .legal-links{flex-direction:column;gap:8px}}
+@media(prefers-reduced-motion:reduce){.ftr a.social-link{transition:none}}
+
+/* ACCESSIBILITY 2026-11-28: комфортные мобильные зоны нажатия без смены дизайна */
+@media(max-width:900px){
+  .mmenu .close{min-width:44px;min-height:44px;padding:0;display:flex;align-items:center;justify-content:center}
+}
+@media(max-width:767px){
+  .ftr .bottom .legal-links a{display:inline-flex;align-items:center;min-height:44px}
+}
